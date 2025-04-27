@@ -1,6 +1,14 @@
-# Next.js App Router
+# Next.js Dashboard
 
-A full stack financial dashboard app. The app is developed following the tutorial in: https://nextjs.org/learn/dashboard-app
+- A full stack financial dashboard app
+
+- The app is developed following the tutorial in
+
+  - https://nextjs.org/learn/dashboard-app
+
+- And the app is running on
+
+  - https://vercel.com/joni-makinens-projects/nextjs-dashboard
 
 ## About
 
@@ -12,11 +20,11 @@ A full stack financial dashboard app. The app is developed following the tutoria
 
 ## Technologies
 
-- asd
+- Next.js (TS, JS)
 
 ## License
 
-- asd
+- MIT
 
 ## Author
 
