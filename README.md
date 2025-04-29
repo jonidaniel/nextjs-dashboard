@@ -4,15 +4,15 @@
 
 - The dashboard was developed following the [Next.js Foundations course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
 
-  - Tutorial Chapters:
+  <!-- - Tutorial Chapters: -->
 
-    1. Getting Started
+  1. Getting Started
 
-    2. CSS Styling
+  2. CSS Styling
 
-    3. Optimizing Fonts and Images
+  3. Optimizing Fonts and Images
 
-    4. Creating Layouts and Pages
+  4. Creating Layouts and Pages
 
   5. Navigating Between Pages
   6. Setting Up Your Database
