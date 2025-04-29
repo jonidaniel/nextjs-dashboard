@@ -6,10 +6,14 @@
 
   - Tutorial Chapters:
 
-  1. Getting Started
-  2. CSS Styling
-  3. Optimizing Fonts and Images
-  4. Creating Layouts and Pages
+    1. Getting Started
+
+    2. CSS Styling
+
+    3. Optimizing Fonts and Images
+
+    4. Creating Layouts and Pages
+
   5. Navigating Between Pages
   6. Setting Up Your Database
   7. Fetching Data
@@ -23,15 +27,21 @@
   15. Adding Authentication
   16. Adding Metadata
 
-- And the app is live and running [here](https://nextjs-dashboard-azure-gamma-85.vercel.app)
-
-## About
-
 - The app has:
   - a public home page,
   - a login page,
   - dashboard pages that are protected by authentication
   - the ability for users to add, edit, and delete invoices
+
+## Setup
+
+- The dashboard is live and running [here](https://nextjs-dashboard-azure-gamma-85.vercel.app)
+
+-
+
+## Screenshots
+
+- asd
 
 ## Technologies
 
