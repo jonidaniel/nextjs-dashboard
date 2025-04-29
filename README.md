@@ -2,13 +2,28 @@
 
 - A full stack financial dashboard app
 
-- The app is developed following the tutorial in
+- The dashboard was developed following the [Next.js Foundations course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
 
-  - https://nextjs.org/learn/dashboard-app
+  - Tutorial Chapters:
 
-- And the app is running on
+  1. Getting Started
+  2. CSS Styling
+  3. Optimizing Fonts and Images
+  4. Creating Layouts and Pages
+  5. Navigating Between Pages
+  6. Setting Up Your Database
+  7. Fetching Data
+  8. Static and Dynamic Rendering
+  9. Streaming
+  10. Partial Prerendering
+  11. Adding Search and Pagination
+  12. Mutating Data
+  13. Handling Errors
+  14. Improving Accessibility
+  15. Adding Authentication
+  16. Adding Metadata
 
-  - https://nextjs-dashboard-azure-gamma-85.vercel.app
+- And the app is live and running [here](https://nextjs-dashboard-azure-gamma-85.vercel.app)
 
 ## About
 
