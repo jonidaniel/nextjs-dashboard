@@ -4,7 +4,7 @@
 
 - The dashboard was developed following the [Next.js Foundations course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
 
-  <!-- - Tutorial Chapters: -->
+  - Tutorial Chapters:
 
   1\. Getting Started
 
