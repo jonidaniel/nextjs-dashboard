@@ -8,7 +8,7 @@
 
 - And the app is running on
 
-  - https://vercel.com/joni-makinens-projects/nextjs-dashboard
+  - https://nextjs-dashboard-azure-gamma-85.vercel.app
 
 ## About
 
@@ -20,7 +20,7 @@
 
 ## Technologies
 
-- Next.js (TS, JS)
+- Next.js (TS, JS, HTML, CSS)
 
 ## License
 
