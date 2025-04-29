@@ -2,6 +2,11 @@
 
 - A full stack financial dashboard app
 
+  - a public home page,
+  - a login page,
+  - dashboard pages that are protected by authentication
+  - the ability for users to add, edit, and delete invoices
+
 - The dashboard was developed following the [Next.js Foundations course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
 
   - Tutorial Chapters:
@@ -37,12 +42,6 @@
     15\. Adding Authentication
 
     16\. Adding Metadata
-
-- The app has:
-  - a public home page,
-  - a login page,
-  - dashboard pages that are protected by authentication
-  - the ability for users to add, edit, and delete invoices
 
 ## Setup
 
