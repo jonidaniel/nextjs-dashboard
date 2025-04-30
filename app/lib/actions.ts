@@ -2,7 +2,6 @@
 
 import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
-
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -44,7 +43,8 @@ export async function createInvoice(prevState: State, formData: FormData) {
     status: formData.get("status"),
   });
 
-  // If form validation fails, return errors early. Otherwise, continue.
+  // If form validation fails, return errors early
+  // Otherwise, continue
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
@@ -65,13 +65,13 @@ export async function createInvoice(prevState: State, formData: FormData) {
   `;
   } catch (error) {
     console.log(error);
-    // If a database error occurs, return a more specific error.
+    // If a database error occurs, return a more specific error
     return {
       message: "Database Error: Failed to Create Invoice.",
     };
   }
 
-  // Revalidate the cache for the invoices page and redirect the user.
+  // Revalidate the cache for the invoices page and redirect the user
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }
@@ -81,12 +81,15 @@ export async function updateInvoice(
   prevState: State,
   formData: FormData
 ) {
+  // Validate form using Zod
   const validatedFields = UpdateInvoice.safeParse({
     customerId: formData.get("customerId"),
     amount: formData.get("amount"),
     status: formData.get("status"),
   });
 
+  // If form validation fails, return errors early
+  // Otherwise, continue
   if (!validatedFields.success) {
     return {
       errors: validatedFields.error.flatten().fieldErrors,
@@ -94,9 +97,11 @@ export async function updateInvoice(
     };
   }
 
+  // Prepare data for updating
   const { customerId, amount, status } = validatedFields.data;
   const amountInCents = amount * 100;
 
+  // Update data in the database
   try {
     await sql`
     UPDATE invoices
@@ -105,17 +110,24 @@ export async function updateInvoice(
   `;
   } catch (error) {
     console.log(error);
+    // If a database error occurs, return a more specific error
     return { message: "Database Error: Failed to Update Invoice." };
   }
 
+  // Revalidate the cache for the invoices page and redirect the user
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }
 
 export async function deleteInvoice(id: string) {
-  //   throw new Error("Failed to Delete Invoice");
-  //TR
-  await sql`DELETE FROM invoices WHERE id = ${id}`;
+  // Delete data from the database
+  try {
+    await sql`DELETE FROM invoices WHERE id = ${id}`;
+  } catch (error) {
+    console.log(error);
+  }
+
+  // Revalidate the cache for the invoices page
   revalidatePath("/dashboard/invoices");
 }
 

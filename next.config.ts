@@ -1,10 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  // experimental: {
-  //   // 'incremental' allows you to adopt PPR for specific routes
-  //   ppr: "incremental",
-  // },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
