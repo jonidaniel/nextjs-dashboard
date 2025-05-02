@@ -3,12 +3,9 @@
 - A full stack financial dashboard app
 
   - Users have the ability to add, edit, and delete invoices
-
   - Consists of
-
-    - public home and login pages,
-    - dashboard pages (invoices, customers) that are accessed via login,
-
+    - public home and login pages
+    - dashboard pages (invoices, customers) that are accessed via login
   - The dashboard utilizes [Vercel](https://vercel.com)'s integrated database service when fetching or storing data
   - [Neon](https://neon.tech) is the actual database service provider
 
