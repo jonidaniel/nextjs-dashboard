@@ -1,10 +1,10 @@
 # Next.js Dashboard
 
-- A full stack financial dashboard app
+- A full stack financial dashboard app where
 
-  - Users have the ability to add, edit, and delete invoices
+  - users have the ability to add, edit, and delete invoices
 
-  - Consists of
+  - It consists of
 
     - public home and login pages
     - dashboard pages (invoices, customers) that are accessed via login
@@ -12,7 +12,7 @@
   - The dashboard utilizes [Vercel](https://vercel.com)'s integrated database service when fetching or storing data
   - [Neon](https://neon.tech) is the actual database service provider
 
-- The dashboard was developed following the comprehensive [Next.js Foundations Course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
+- The dashboard was developed following the [Next.js Foundations Course App Router Tutorial](https://nextjs.org/learn/dashboard-app)
 
   - Tutorial Chapters:
 
@@ -48,7 +48,9 @@
 
     16\. Adding Metadata
 
-## Setup
+  - The comprehensive tutorial gave me good understanding on the listed topics in Next.js context
+
+## Usage
 
 - The dashboard is live and running on [Vercel cloud](https://nextjs-dashboard-azure-gamma-85.vercel.app)
 
@@ -71,6 +73,7 @@
 ## Technologies
 
 - Next.js
+
   - TS
   - HTML
   - CSS
@@ -82,3 +85,5 @@
 ## Author
 
 Spring 2025 © Joni Mäkinen [@jonidaniel](https://github.com/jonidaniel)
+
+The dashboard was developed as a final project of the [Laurea UAS](https://www.laurea.fi) _Full Stack Development_ course
