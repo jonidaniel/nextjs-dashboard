@@ -74,9 +74,11 @@
 
 ## Technologies
 
+- Node.js
+
 - Next.js
 
-  - TS
+  - TypeScript
   - HTML
   - CSS
 
