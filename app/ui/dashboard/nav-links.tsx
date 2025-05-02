@@ -1,3 +1,4 @@
+// Add this directive when using React Hooks
 "use client";
 
 import {
@@ -6,7 +7,10 @@ import {
   DocumentDuplicateIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
+// Next.js hook for getting the user's current path the URL
 import { usePathname } from "next/navigation";
+// A library that lets you toggle class names easily
+// (apply classes conditionally)
 import clsx from "clsx";
 
 // Map of links to display in the side navigation.

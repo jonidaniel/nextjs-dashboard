@@ -1,7 +1,9 @@
+// Mark all exported functions within the file as Server Actions
 "use server";
 
 import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
+// A TypeScript-first validation library
 import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
@@ -9,6 +11,8 @@ import postgres from "postgres";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
+// Define a schema that matches the shape of your form object
+// This schema will validate the formData before saving it to a database
 const FormSchema = z.object({
   id: z.string(),
   customerId: z.string({
@@ -71,7 +75,8 @@ export async function createInvoice(prevState: State, formData: FormData) {
     };
   }
 
-  // Revalidate the cache for the invoices page and redirect the user
+  // Revalidate the cache for the invoices page
+  // and redirect the user back to the invoices page
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }
@@ -114,7 +119,8 @@ export async function updateInvoice(
     return { message: "Database Error: Failed to Update Invoice." };
   }
 
-  // Revalidate the cache for the invoices page and redirect the user
+  // Revalidate the cache for the invoices page
+  // and redirect the user back to the invoices page
   revalidatePath("/dashboard/invoices");
   redirect("/dashboard/invoices");
 }

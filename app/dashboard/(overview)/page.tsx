@@ -1,6 +1,8 @@
 import RevenueChart from "@/app/ui/dashboard/revenue-chart";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoices";
 import { lusitana } from "@/app/ui/fonts";
+// Suspense lets you display a fallback
+// until its children have finished loading
 import { Suspense } from "react";
 import CardWrapper from "@/app/ui/dashboard/cards";
 import {
@@ -21,14 +23,20 @@ export default async function Page() {
         Dashboard
       </h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* The desired component is wrapped inside Suspense */}
+        {/* Suspense is given a fallback (loading skeleton) */}
         <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />
         </Suspense>
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
+        {/* The desired component is wrapped inside Suspense */}
+        {/* Suspense is given a fallback (loading skeleton) */}
         <Suspense fallback={<RevenueChartSkeleton />}>
           <RevenueChart />
         </Suspense>
+        {/* The desired component is wrapped inside Suspense */}
+        {/* Suspense is given a fallback (loading skeleton) */}
         <Suspense fallback={<LatestInvoicesSkeleton />}>
           <LatestInvoices />
         </Suspense>

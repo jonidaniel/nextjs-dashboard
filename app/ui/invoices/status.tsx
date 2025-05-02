@@ -1,9 +1,11 @@
 import { CheckIcon, ClockIcon } from "@heroicons/react/24/outline";
+// A library that lets you toggle class names easily
 import clsx from "clsx";
 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
+      // You can use clsx to conditionally apply the classes
       className={clsx(
         "inline-flex items-center rounded-full px-2 py-1 text-xs",
         {

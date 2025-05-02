@@ -53,6 +53,9 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
+    // Use Promise.all to initiate all promises at the same time
+    // This way you can avoid request waterfall
+    // (network requests that depend on the completion of previous requests)
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,
@@ -112,6 +115,7 @@ export async function fetchFilteredInvoices(
   }
 }
 
+// Returns the total number of pages based on the search query
 export async function fetchInvoicesPages(query: string) {
   try {
     const data = await sql`SELECT COUNT(*)
