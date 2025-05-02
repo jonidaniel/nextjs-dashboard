@@ -78,9 +78,15 @@
 
 - Next.js
 
-  - TypeScript
-  - HTML
-  - CSS
+- TypeScript
+
+- HTML
+
+- CSS
+
+- SQL
+
+- and more (see /documents/project-report.docx)
 
 ## License
 
