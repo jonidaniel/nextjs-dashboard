@@ -54,6 +54,11 @@
 
 - The dashboard is live and running on [Vercel cloud](https://nextjs-dashboard-azure-gamma-85.vercel.app)
 
+  - Use testing credentials:
+
+    - user@nextmail.com
+    - 123456
+
   - Tested on [Apple Safari](https://www.apple.com/safari/) and [Google Chrome](https://www.google.com/chrome/)
 
 - If you like, you can clone this repo with
