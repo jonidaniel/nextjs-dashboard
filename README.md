@@ -63,10 +63,10 @@
 
 - If you like, you can clone this repo with
 
-  - git clone https://github.com/jonidaniel/nextjs-dashboard
+  - `git clone https://github.com/jonidaniel/nextjs-dashboard`
   - then command (in root)
-    - npm i
-    - npm dev; to continue where i left off
+    - `npm i`
+    - `npm dev`; to continue where i left off
 
 ## Screenshots
 
