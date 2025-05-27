@@ -52,7 +52,7 @@
 
 ## Usage
 
-- The dashboard is live and running on [Vercel cloud](https://nextjs-dashboard-azure-gamma-85.vercel.app)
+- The dashboard is live and running on [Vercel platform](https://nextjs-dashboard-azure-gamma-85.vercel.app)
 
   - Use testing credentials when logging in:
 
